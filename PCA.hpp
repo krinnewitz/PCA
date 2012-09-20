@@ -74,11 +74,11 @@ public:
 	 */
 	virtual ~PCA();
 
-	/// 2 dimensional vector for fist direction
-	float m_x, m_y;
+	/// 3 dimensional vector for fist direction
+	float m_x, m_y, m_z;
 private:
 
-	void calcPCA(cv::Mat img, float &x, float &y);
+	void calcPCA(cv::Mat img, float &x, float &y, float &z);
 
 };
 

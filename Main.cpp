@@ -27,6 +27,7 @@ int main (int argc, char** argv)
 	{
 		cv::Mat src1 = cv::imread(argv[1]);
 		lssr::PCA* p1 = new lssr::PCA(src1);
+		cout<<p1->m_x<<", "<<p1->m_y<<endl;
 		cv::Mat src2 = cv::imread(argv[2]);
 		lssr::PCA* p2 = new lssr::PCA(src2);
 		cout<<p1->compareTo(*p2)<<endl;
